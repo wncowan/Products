@@ -1,0 +1,9 @@
+.container {
+    background: #DFBBB1;
+    padding: 1em;
+    margin: 1em auto;
+    width: 30%;
+    -webkit-box-shadow: 1px 4px 31px 5px rgba(0,0,0,0.44);
+    -moz-box-shadow: 1px 4px 31px 5px rgba(0,0,0,0.44);
+    box-shadow: 1px 4px 31px 5px rgba(0,0,0,0.44);
+}

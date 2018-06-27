@@ -1,0 +1,16 @@
+.container {
+    margin-top: 1em;
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}

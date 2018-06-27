@@ -1,0 +1,19 @@
+<div *ngIf="error" class="container error">
+  <h1>There was a problem communicating with the database. Try reloading.</h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div *ngFor="let product of products" class="col-md-4 row-eq-height">
+      <div class="jumbotron container text-center">
+          <h6>{{product['name']}}</h6>
+          <img class="img-thumbnail" [src]="product['image']" alt="product">
+          <p class="text-left">${{product['price']}}</p>
+          <div class="text-right options">
+            <button [routerLink]="['/products/'+product['_id']]" class="btn btn-danger"><i class="fa fa-edit fa-2x">edit</i></button>
+            <button (click)="delete(product['_id'])" class="btn btn-secondary"><i class="fa fa-trash fa-2x">delete</i></button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
